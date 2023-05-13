@@ -32,8 +32,9 @@ jobs:
         detekt_version: '1.23.0-RC3'
 
     - name: Detekt errors
-      run: detekt-cli
-      with:
-          args: --parallel --config detekt/config/detekt-errors.yml
+      run: detekt-cli --parallel --config detekt/config/detekt-errors.yml
+
+    - name: Detekt warnings
+      run: detekt-cli --parallel --config detekt/config/detekt-warnings.yml
 
 
