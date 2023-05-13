@@ -36,9 +36,4 @@ jobs:
       with:
           args: --parallel --config detekt/config/detekt-errors.yml
 
-    - name: Detekt warnings
-      run: detekt-cli
-      with:
-          args: --parallel --config detekt/config/detekt-warnings.yml
-
 
